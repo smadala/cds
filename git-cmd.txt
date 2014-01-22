@@ -1,0 +1,76 @@
+1) To add files in current directory
+$git add .
+
+2)To check files status 
+$git status
+
+3)To remove added file, for directory use -r
+$git rm --cached <filename>
+
+4)to commit
+$git commit -m "comment"
+
+5)for global settings 
+git config --global user.email "sattimadala@gmail.com"
+git config --global user.name "smadala"
+
+6)git log (for seeing list of commits) / git log --oneline
+
+7)git diff / git diff -cached
+
+8) $git commit -m -a "comment"
+    
+	for add and commit
+9) git status -s
+
+10)git init <project>  project now repository
+
+11) add SSH key to Github site
+to generate SSH key
+$ssh-keygen -t rsa -C "sattimadala@gmail.com"
+copy public key from .ssh/id_rsa.pub file to SSH in github account
+
+12) test ssh -T git@github.com 
+add following in .ssh/config if any problem occurs
+Host github.com
+  Hostname ssh.github.com
+    Port 443
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
