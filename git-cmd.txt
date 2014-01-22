@@ -36,6 +36,16 @@ Host github.com
   Hostname ssh.github.com
     Port 443
 
+13) $git remote add origin "git@github.com:smadala/cds.git"
+
+for adding local repository to github for first time
+
+14) $git push origin master
+	
+push the local repo to github
+
+
+
 
 
 
