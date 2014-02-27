@@ -37,50 +37,91 @@ Host github.com
     Port 443
 
 13) $git remote add origin "git@github.com:smadala/cds.git"
+     origin - is name for this url
 
 for adding local repository to github for first time
 
 14) $git push origin master
+
+ master is branch name
 	
 push the local repo to github
 
+======================
+Branching
+++++++++++++++++++++++
 
 
+1)
+$git branch
+to show all the branches
+* before name shows current working branch
+
+2)
+$git branch <new_branch_name>
+to create new branch
+
+3) 
+$git checkout <branch_name>
+to change branch name
+
+=================================
+Clone
+---------------------------------
+
+$git clone git@github.com:smadala/cds.git
+
+3) $git merge "another_branch"
+
+$git pull equivalent to
+$git fetch
+$git merge
 
 
+4) to rebase
+$git add .
+$git rebase --continue
+$git pull --rebase
 
 
+================================
+Tag
+------++++++++++++++++++++++------
+
+git tag -a v1.0 -m "release version on v1.0 ready"
+
+git commit -a -m "message"
+
+$git tag 
+to show all tags
+
+$git show v1.0
+to show details of particular tag
+
+$git push "name" v1.0
+to push tag to remote repository
+
+$git push "name" --tag
+to push all the tags
 
 
+==============================
+revert
+++++++++++++=================+++++++
+
+$git checkout "hash code"
+
+$git checkout v1.0 // to paarticular tag
+
+$git checkout master
+
+$git reset --hard "hashcode"
+to revert local commit changes (removes history totally)
+
+$git revert "hashcode3" "hashcode2" 
+
+we should go in sequence for revert
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$git checkout master
 

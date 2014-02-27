@@ -407,7 +407,7 @@ class BST
 					performRR(temp, parentNode,temp.data);
 				else
 					performRL(temp, parentNode,temp.data);
-				
+			}	
 		}	
 	}
 	public node getParent() {
